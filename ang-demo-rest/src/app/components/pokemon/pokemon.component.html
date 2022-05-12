@@ -1,14 +1,25 @@
-<p>Nombre</p>
-<input type="text" [(ngModel)]="name">
-<button (click)="search()">Buscar</button>
-<img src="{{urlImage}}" alt="Foto Pokemon">
-<img src="{{urlImageB}}" alt="Foto Pokemon back">
-<img src="{{urlImageC}}" alt="Foto Pokemon M ">
-<img src="{{urlImageD}}" alt="Foto Pokemon M back">
 
+
+<div class="input-group">
+<div class="form-outline">
+<input type="text" [(ngModel)]="name" id="search-focus" id="form1" class="form-control" placeholder="Pokemon's name.." (keydown.enter)="search()" oninput="this.value = this.value.toLowerCase()" >
+</div>
+<button type="button" class="btn btn-primary" (click)="search()">
+  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+  </svg>
+</button>
+</div>
+<img src="{{urlImage}}" alt="Foto Pokemon" >
+<img src="{{urlImageB}}" alt="Foto Pokemon back" >
+<img src="{{urlImageC}}" alt="Foto Pokemon M " >
+<img src="{{urlImageD}}" alt="Foto Pokemon M back">
+<p>type: {{type}}</p>
 <p>hp: {{hp}} </p>
 <p>attack: {{attack}} </p>
 <p>defense: {{defense}} </p>
 <p>specialattack: {{specialattack}} </p>
 <p>specialdefense: {{specialdefense}} </p>
 <p>speed: {{speed}} </p>
+
+

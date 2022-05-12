@@ -9,6 +9,7 @@ import { PokemonService } from 'src/app/services/pokemon.service';
 export class PokemonComponent implements OnInit {
 
   name: string
+  type: string
   urlImage: string
   urlImageB: string
   urlImageC: string
@@ -28,6 +29,7 @@ export class PokemonComponent implements OnInit {
 
   search() {
     this.pokemonService.getPokemon(this.name).subscribe((data:any) => {
+      this.type = data.types[0].type.name
       this.urlImage = data.sprites.front_shiny
       this.urlImageB = data.sprites.back_shiny
       this.urlImageC = data.sprites.front_shiny_female
