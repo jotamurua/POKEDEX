@@ -1,5 +1,5 @@
 
-
+<div class="container">
 <div class="input-group">
 <div class="form-outline">
 <input type="text" [(ngModel)]="name" id="search-focus" id="form1" class="form-control" placeholder="Pokemon's name.." (keydown.enter)="search()" oninput="this.value = this.value.toLowerCase()" >
@@ -10,16 +10,20 @@
   </svg>
 </button>
 </div>
+<div class="imgs">
 <img src="{{urlImage}}" alt="Foto Pokemon" >
 <img src="{{urlImageB}}" alt="Foto Pokemon back" >
 <img src="{{urlImageC}}" alt="Foto Pokemon M " >
 <img src="{{urlImageD}}" alt="Foto Pokemon M back">
-<p>type: {{type}}</p>
-<p>hp: {{hp}} </p>
-<p>attack: {{attack}} </p>
-<p>defense: {{defense}} </p>
-<p>specialattack: {{specialattack}} </p>
-<p>specialdefense: {{specialdefense}} </p>
-<p>speed: {{speed}} </p>
-
+</div>
+<div class="stats">
+<p>type:</p> <p>{{type}}</p>
+<p>hp:</p> <p> {{hp}} </p>
+<p>attack:</p> <p> {{attack}} </p>
+<p>defense:</p> <p> {{defense}} </p>
+<p>specialattack:</p> <p> {{specialattack}} </p>
+<p>specialdefense:</p> <p> {{specialdefense}} </p>
+<p>speed:</p> <p> {{speed}} </p>
+</div>
+</div>
 
