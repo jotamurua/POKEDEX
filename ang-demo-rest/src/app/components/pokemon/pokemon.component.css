@@ -10,3 +10,16 @@
   display: inline-block;
   margin: 10px;
 }
+.input-group{
+display:flex;
+align-items: center;
+justify-content: center;
+
+}
+.imgs {
+  display:flex;
+align-items: center;
+justify-content: center;
+}
+
+
