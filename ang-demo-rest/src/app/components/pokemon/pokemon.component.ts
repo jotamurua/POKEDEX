@@ -1,4 +1,6 @@
+import { NgClass } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
+import { ignoreElements } from 'rxjs';
 import { PokemonService } from 'src/app/services/pokemon.service';
 
 @Component({
@@ -41,5 +43,6 @@ export class PokemonComponent implements OnInit {
       this.specialdefense = data.stats[4].base_stat
       this.speed = data.stats[5].base_stat
     })
+ 
   }
 }

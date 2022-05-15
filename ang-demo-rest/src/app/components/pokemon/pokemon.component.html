@@ -10,15 +10,13 @@
   </svg>
 </button>
 </div>
-<div class="imgs">
-<img src="{{urlImage}}" alt="Foto Pokemon" >
-<img src="{{urlImageB}}" alt="Foto Pokemon back" >
-<img src="{{urlImageC}}" alt="Foto Pokemon M " >
-<img src="{{urlImageD}}" alt="Foto Pokemon M back">
+<div class="imgs" ng-show="showMe">
+<img src="{{urlImage}}"  alt="Foto Pokemon"  class="img-responsive"  >
+<img src="{{urlImageB}}" alt="Foto Pokemon back" class="img-responsive" >
 </div>
 <div class="stats">
   <ul class="list-group">
-<li class="list-group-item d-flex justify-content-between align-items-center item"><p>type:</p> <span class=>{{type}}</span></li>
+<li class="list-group-item d-flex justify-content-between align-items-center item"><p>type:</p> <p class=>{{type}}</p></li>
 <li class="list-group-item d-flex justify-content-between align-items-center item"><p>hp:</p> <p class=> {{hp}} </p></li>
 <li class="list-group-item d-flex justify-content-between align-items-center item"><p>attack:</p> <p class=> {{attack}} </p></li>
 <li class="list-group-item d-flex justify-content-between align-items-center item"><p>defense:</p> <p class=> {{defense}} </p></li>
@@ -28,4 +26,3 @@
 </ul>
 </div>
 </div>
-

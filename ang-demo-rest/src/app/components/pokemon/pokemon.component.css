@@ -14,12 +14,14 @@
 display:flex;
 align-items: center;
 justify-content: center;
-
+padding: 1em;
 }
 .imgs {
   display:flex;
 align-items: center;
 justify-content: center;
 }
-
+#off {
+  display: none;
+}
 
