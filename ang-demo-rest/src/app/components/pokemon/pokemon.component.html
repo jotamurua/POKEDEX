@@ -11,18 +11,18 @@
 </button>
 </div>
 <div class="imgs" ng-show="showMe">
-<img src="{{urlImage}}"  alt="Foto Pokemon"  class="img-responsive"  >
+<img src="{{urlImage}}"  alt="Foto Pokemon"  class="rounded-circle" onerror="this.class='invisible'" >
 <img src="{{urlImageB}}" alt="Foto Pokemon back" class="img-responsive" >
 </div>
 <div class="stats">
   <ul class="list-group">
-<li class="list-group-item d-flex justify-content-between align-items-center item"><p>type:</p> <p class=>{{type}}</p></li>
-<li class="list-group-item d-flex justify-content-between align-items-center item"><p>hp:</p> <p class=> {{hp}} </p></li>
-<li class="list-group-item d-flex justify-content-between align-items-center item"><p>attack:</p> <p class=> {{attack}} </p></li>
-<li class="list-group-item d-flex justify-content-between align-items-center item"><p>defense:</p> <p class=> {{defense}} </p></li>
-<li class="list-group-item d-flex justify-content-between align-items-center item"><p>specialattack:</p> <p class=> {{specialattack}}</p></li>
-<li class="list-group-item d-flex justify-content-between align-items-center item"><p>specialdefense:</p> <p class=> {{specialdefense}} </p></li>
-<li class="list-group-item d-flex justify-content-between align-items-center item"><p>speed:</p> <p class=> {{speed}}</p></li>
+<li class="list-group-item d-flex justify-content-between align-items-center item"><p>type:</p> <p class="result">{{type}}</p></li>
+<li class="list-group-item d-flex justify-content-between align-items-center item"><p>hp:</p> <p class="result"> {{hp}} </p></li>
+<li class="list-group-item d-flex justify-content-between align-items-center item"><p>attack:</p> <p class="result"> {{attack}} </p></li>
+<li class="list-group-item d-flex justify-content-between align-items-center item"><p>defense:</p> <p class="result"> {{defense}} </p></li>
+<li class="list-group-item d-flex justify-content-between align-items-center item"><p>specialattack:</p> <p class="result"> {{specialattack}}</p></li>
+<li class="list-group-item d-flex justify-content-between align-items-center item"><p>specialdefense:</p> <p class="result"> {{specialdefense}} </p></li>
+<li class="list-group-item d-flex justify-content-between align-items-center item"><p>speed:</p> <p class="result"> {{speed}}</p></li>
 </ul>
 </div>
 </div>
